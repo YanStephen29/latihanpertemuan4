@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-color: #03135a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 4px solid #368ec1;
+}
+
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #368ec1;
+    color: white;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+aside {
+    width: 25%;
+    background-color: #e9e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+aside h2 {
+    color: #03135a;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+aside h2 a {
+    text-decoration: none; 
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit; 
+}
+
+aside h2 a:hover {
+    text-decoration: underline;
+    color: #368ec1; 
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    background-color: #368ec1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content {
+    width: 75%;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #03135a;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.maps-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.maps-list li {
+    margin-bottom: 10px;
+}
+
+.maps-list a {
+    text-decoration: none;
+    color: #03135a;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maps-list a:hover {
+    background-color: #368ec1;
+    color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.maps-list a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.church-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.committee-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px;
+    flex-basis: 150px;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #03135a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 4px solid #1177d6;
+    position: relative;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: solid;
+    color: #368ec1;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .committee-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 100%;
+    }
+}
+
+.join-form-section {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.join-form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.join-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form-section label {
+    margin-bottom: 5px;
+}
+
+.join-form-section input[type="text"],
+.join-form-section input[type="date"],
+.join-form-section input[type="tel"],
+.join-form-section input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.join-form-section input[type="text"]:focus,
+.join-form-section input[type="date"]:focus,
+.join-form-section input[type="tel"]:focus {
+    border-color: #368ec1;
+}
+
+.join-form-section .gender-options {
+    margin-bottom: 15px;
+}
+
+.join-form-section input[type="radio"] {
+    margin-right: 5px;
+}
+
+.join-form-section input[type="submit"] {
+    background-color: #368ec1;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.join-form-section input[type="submit"]:hover {
+    background-color: #2980b9;
+}

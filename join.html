@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHKBP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="logo.png" alt="Logo Gereja" class="logo">
+            <h1>Naposo HKBP Srengseng Sawah</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="join.html">Join</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Event Mingguan</h2>
+            <ul>
+                <li><a href="ibadah-minggu.html">Ibadah Minggu</a></li>
+                <li><a href="latihan-paduan-suara.html">Paduan Suara</a></li>
+                <li><a href="badminton.html">Badminton</a></li>
+            </ul>
+            <h2>Event Tahunan</h2>
+            <ul>
+                <li><a href="retreat.html">Retreat</a></li>
+                <li><a href="perayaan-natal.html">Perayaan Natal</a></li>
+                <li><a href="kebaktian-padang.html">Kebaktian Padang</a></li>
+            </ul>
+
+            <h2><a href="commite.html" class="commite-link">Commite</a></h2>
+        </aside>
+        <section class="content">
+            <h2>Join</h2>
+            <p>Penasaran dengan kegiatan-kegiatan kami kedepannya? Rindu dengar firman Tuhan? Ingin bertemu dan berkenalan dengan saudara seiman? Yuk segera join Naposo HKBP Srengseng Sawah</p>
+            <div class="join-form-section">
+                <h2>Form Pendaftaran</h2>
+                <form action="submit-form.html" method="POST">
+                    <label for="full-name">Nama Lengkap:</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="Masukkan Nama Lengkap">
+    
+                    <label>Jenis Kelamin:</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Perempuan</label>
+                    </div>
+    
+                    <label for="birth-date">Tanggal Lahir:</label>
+                    <input type="date" id="birth-date" name="birth-date" required>
+    
+                    <label for="church-origin">Asal Gereja:</label>
+                    <input type="text" id="church-origin" name="church-origin" required placeholder="Masukkan Nama Gereja">
+    
+                    <label for="phone-number">Nomor Telepon:</label>
+                    <input type="tel" id="phone-number" name="phone-number" required placeholder="Masukkan Nomor Telepon">
+    
+                    <input type="submit" value="Daftar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Naposo HKBP Srengseng Sawah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
